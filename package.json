@@ -17,7 +17,8 @@
     "keywords": [
         "phaser",
         "phaser3",
-        "phaser-game"
+        "phaser-game",
+	"android"
     ],
     "license": "MIT",
     "repository": {
