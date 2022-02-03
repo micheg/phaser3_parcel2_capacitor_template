@@ -1,6 +1,5 @@
 import { SND } from '../cfg/assets';
 import Phaser from 'phaser'
-import Utils from '../utils/utils';
 
 export default class BGMusic extends Phaser.Scene
 {
