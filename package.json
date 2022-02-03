@@ -1,7 +1,7 @@
 {
-    "name": "phaser3_lady_in_trouble",
+    "name": "phaser3_game_template",
     "version": "1.0.0",
-    "description": "A simple game with phaserjs for kaios",
+    "description": "A simple template with phaser, parcel, capacitor",
     "scripts": {
         "clean:output": "rimraf www",
         "init": "npx cap init && npx cap add android && npx cap sync",

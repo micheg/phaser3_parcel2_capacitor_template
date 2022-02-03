@@ -1,6 +1,5 @@
 import { WIDTH, HEIGHT, CENTER_X, CENTER_Y } from '../cfg/cfg';
 import { IMG, UI } from '../cfg/assets';
-import Utils from '../utils/utils';
 import Phaser from 'phaser'
 
 export default class StartScene extends Phaser.Scene

@@ -7,4 +7,5 @@ Add your icon.png (1024x1024 px) and splash.png (2732x2732 px) files to the 'res
 # Steps:
 
 * npm install
+* npm run setup
 * npm run init
