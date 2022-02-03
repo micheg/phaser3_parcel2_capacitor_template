@@ -11,7 +11,7 @@
         "app": "npm run clean:output && npx parcel build src/index.html --dist-dir www --no-source-maps && npx cap copy",
         "build": "npm run clean:output && npx parcel build src/index.html --dist-dir www --no-source-maps",
         "apk": "npm run build && npx cap copy && cd android && ./gradlew assembleDebug && cd ..",
-	"make_icons": "npx capacitor-resources -p android,ios && npx cap sync",
+        "make_icons": "npx capacitor-resources -p android,ios && npx cap sync",
         "DS_Store_Clean": "find . -name \".DS_Store\" -delete"
     },
     "author": "micheg",
@@ -19,7 +19,7 @@
         "phaser",
         "phaser3",
         "phaser-game",
-	"android"
+        "android"
     ],
     "license": "MIT",
     "repository": {
@@ -37,7 +37,7 @@
         "@capacitor/android": "^3.4.0",
         "@capacitor/cli": "^3.4.0",
         "@capacitor/core": "^3.4.0",
-	"capacitor-resources": "^2.0.5",
+        "capacitor-resources": "^2.0.5",
         "cordova-plugin-navigationbar-color": "^0.1.0",
         "cordova-plugin-screen-orientation": "^3.0.2",
         "cordova-plugin-statusbar": "^3.0.0",
