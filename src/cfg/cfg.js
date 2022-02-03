@@ -1,8 +1,8 @@
 import Phaser from 'phaser'
 import VirtualJoystickPlugin from 'phaser3-rex-plugins/plugins/virtualjoystick-plugin.js';
 
-export const WIDTH = 360;
-export const HEIGHT = 780;
+export const WIDTH = 780;
+export const HEIGHT = 360;
 
 // All configuration
 export default

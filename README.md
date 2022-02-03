@@ -10,3 +10,12 @@ Add your icon.png (1024x1024 px) and splash.png (2732x2732 px) files to the 'res
 * npm install
 * npm run setup
 * npm run init
+* npm run make_icons
+* npx cap sync
+* npm run dev (for serving over http)
+
+# For Android build:
+
+* npm run build
+* npm run apk
+* npx cap run android

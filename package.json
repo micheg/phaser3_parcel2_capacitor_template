@@ -7,12 +7,11 @@
         "init": "npx cap init && npx cap add android && npx cap sync",
         "run": "npm run apk && npx cap run android",
         "setup": "npm run clean:output && npx parcel build src/index.html --dist-dir www",
-        "dev": "npm run clean:output && npx parcel serve src/index.dev.html -p 8080 --dist-dir www",
+        "dev": "npm run clean:output && npx parcel serve src/index.html -p 8080 --dist-dir www",
         "app": "npm run clean:output && npx parcel build src/index.html --dist-dir www --no-source-maps && npx cap copy",
         "build": "npm run clean:output && npx parcel build src/index.html --dist-dir www --no-source-maps",
         "apk": "npm run build && npx cap copy && cd android && ./gradlew assembleDebug && cd ..",
-        "make_icons": "npx capacitor-resources -p android,ios && npx cap sync",
-        "DS_Store_Clean": "find . -name \".DS_Store\" -delete"
+        "make_icons": "npx capacitor-resources -p android,ios && npx cap sync"
     },
     "author": "micheg",
     "keywords": [
