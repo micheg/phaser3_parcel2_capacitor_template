@@ -1,0 +1,48 @@
+{
+    "name": "phaser3_lady_in_trouble",
+    "version": "1.0.0",
+    "description": "A simple game with phaserjs for kaios",
+    "scripts": {
+        "clean:output": "rimraf www",
+        "init": "npx cap init && npx cap add android && npx cap sync",
+        "run": "npm run apk && npx cap run android",
+        "setup": "npm run clean:output && npx parcel build src/index.html --dist-dir www",
+        "dev": "npm run clean:output && npx parcel serve src/index.dev.html -p 8080 --dist-dir www",
+        "app": "npm run clean:output && npx parcel build src/index.html --dist-dir www --no-source-maps && npx cap copy",
+        "build": "npm run clean:output && npx parcel build src/index.html --dist-dir www --no-source-maps",
+        "apk": "npm run build && npx cap copy && cd android && ./gradlew assembleDebug && cd ..",
+        "DS_Store_Clean": "find . -name \".DS_Store\" -delete"
+    },
+    "author": "micheg",
+    "keywords": [
+        "phaser",
+        "phaser3",
+        "phaser-game"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/micheg/ladies"
+    },
+    "homepage": "kaios.michelangelog.com",
+    "devDependencies": {
+        "parcel": "^2.2.1",
+        "parcel-reporter-static-files-copy": "^1.3.4",
+        "phaser3-rex-plugins": "^1.1.46",
+        "rimraf": "^3.0.2"
+    },
+    "dependencies": {
+        "@capacitor/android": "^3.4.0",
+        "@capacitor/cli": "^3.4.0",
+        "@capacitor/core": "^3.4.0",
+        "cordova-plugin-navigationbar-color": "^0.1.0",
+        "cordova-plugin-screen-orientation": "^3.0.2",
+        "cordova-plugin-statusbar": "^3.0.0",
+        "es6-promise-plugin": "^4.2.2",
+        "mustache": "^4.2.0",
+        "phaser": "^3.55.2"
+    },
+    "externals": {
+        "build/**/*": false
+    }
+}
